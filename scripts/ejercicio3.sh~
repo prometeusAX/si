@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo useradd -m -p $1  $2
+sudo useradd -m -p $(openssl passwd -1 $2) $1
